@@ -1,0 +1,199 @@
+      you own the binary, you get updates. No month where you forget to cancel
+      and get charged. No price hike email. No "your plan has been discontinued."
+    </p>
+
+    <div class="contrast-row" style="margin-top:48px; text-align:left;">
+      <div class="contrast-box bad">
+        <h3>⚠ Subscription tools</h3>
+        <ul>
+          <li><span class="cross">✕</span> $20–$40/mo, forever</li>
+          <li><span class="cross">✕</span> Telemetry on your code</li>
+          <li><span class="cross">✕</span> Their model, their terms</li>
+          <li><span class="cross">✕</span> Price goes up. You adapt.</li>
+          <li><span class="cross">✕</span> Cancel and lose access</li>
+        </ul>
+      </div>
+      <div class="contrast-box good">
+        <h3>✦ Bunker</h3>
+        <ul>
+          <li><span class="check-blue">✓</span> <span>$99 once. That's it.</span></li>
+          <li><span class="check-blue">✓</span> <span>Zero telemetry. Air-gapped ok.</span></li>
+          <li><span class="check-blue">✓</span> <span>Your model, your keys, your terms.</span></li>
+          <li><span class="check-blue">✓</span> <span>Price is locked forever.</span></li>
+          <li><span class="check-blue">✓</span> <span>Own the binary, use it forever.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── COMMUNITY ─────────────────────────────────────────────────── -->
+<section id="community" class="section">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="label">Community</span>
+        <h2>You bought it,<br />you shape it.</h2>
+        <p class="sub">
+          Every buyer gets a vote. The roadmap is public. Top-voted features ship first.
+          No enterprise customers jumping your request. No product manager deciding
+          what matters. The people actually using Bunker decide what it becomes.
+        </p>
+        <a href="#capture" class="btn btn-outline" style="margin-top:32px;">Join the waitlist</a>
+      </div>
+      <div>
+        <p class="mono" style="font-size:12px; color:var(--muted); margin-bottom:20px; letter-spacing:0.08em;">CURRENT FEATURE VOTES</p>
+        <div class="vote-items">
+          <div class="vote-item">
+            <span class="vote-label">Agent screenshot feedback</span>
+            <div class="vote-bar-wrap"><div class="vote-bar" style="width:91%"></div></div>
+            <span class="vote-pct">91%</span>
+          </div>
+          <div class="vote-item">
+            <span class="vote-label">Multi-agent support</span>
+            <div class="vote-bar-wrap"><div class="vote-bar" style="width:78%"></div></div>
+            <span class="vote-pct">78%</span>
+          </div>
+          <div class="vote-item">
+            <span class="vote-label">Git diff viewer</span>
+            <div class="vote-bar-wrap"><div class="vote-bar" style="width:65%"></div></div>
+            <span class="vote-pct">65%</span>
+          </div>
+          <div class="vote-item">
+            <span class="vote-label">Voice command mode</span>
+            <div class="vote-bar-wrap"><div class="vote-bar" style="width:54%"></div></div>
+            <span class="vote-pct">54%</span>
+          </div>
+          <div class="vote-item">
+            <span class="vote-label">Built-in Ollama manager</span>
+            <div class="vote-bar-wrap"><div class="vote-bar" style="width:48%"></div></div>
+            <span class="vote-pct">48%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PRICING ───────────────────────────────────────────────────── -->
+<section id="pricing" class="section">
+  <div class="container">
+    <div style="text-align:center; max-width:560px; margin:0 auto 60px;">
+      <span class="label">Pricing</span>
+      <h2>Simple. One-time. No tricks.</h2>
+      <p class="sub" style="margin:0 auto;">Two tiers. Both run locally. No data leaves your machine.</p>
+    </div>
+    <div class="compare">
+      <div class="compare-col">
+        <div class="compare-header">
+          <div class="plan">Free — BYOK</div>
+          <div class="price">$0 <span>/ forever</span></div>
+          <div class="desc">Bring your own API key. You handle the agent setup.</div>
+        </div>
+        <div class="compare-body">
+          <div class="compare-item"><span class="check">✓</span> <span>Bunker editor — full access</span></div>
+          <div class="compare-item"><span class="check">✓</span> <span>Local API for your agent</span></div>
+          <div class="compare-item"><span class="check">✓</span> <span>Any model via your own key</span></div>
+          <div class="compare-item"><span class="check">✓</span> <span>File read/write/run commands</span></div>
+          <div class="compare-item"><span class="cross">✕</span> <span style="color:var(--muted)">Agent API (no external agent control)</span></div>
+          <div class="compare-item"><span class="cross">✕</span> <span style="color:var(--muted)">Telegram command integration</span></div>
+          <div class="compare-item"><span class="cross">✕</span> <span style="color:var(--muted)">Priority community votes</span></div>
+          <div style="margin-top:24px;">
+            <a href="#capture" class="btn btn-outline" style="width:100%; justify-content:center;">Get free access</a>
+          </div>
+        </div>
+      </div>
+      <div class="compare-col featured">
+        <div class="compare-header">
+          <div class="plan">BYOA — One-time</div>
+          <div class="price">$99 <span>/ once</span></div>
+          <div class="desc">Unlock the Agent API. Connect any AI agent — Python, Node, anything — to drive your editor.</div>
+        </div>
+        <div class="compare-body">
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Everything in Free</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Agent API — connect any agent (Python, Node, anything)</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Telegram command interface</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Screenshot + browser console reads</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Persistent memory across sessions</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Priority feature votes</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>All future updates — lifetime</span></div>
+          <div style="margin-top:24px;">
+            <a href="#capture" class="btn btn-primary" style="width:100%; justify-content:center;">Get Bunker — $99</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── EMAIL CAPTURE ──────────────────────────────────────────────── -->
+<section id="email">
+  <div class="container">
+    <span class="label" style="display:block;text-align:center;">Early access</span>
+    <h2>Be first in.</h2>
+    <p class="sub">Drop your email. We'll tell you when the doors open — no spam, one email.</p>
+    <form class="email-form" onsubmit="handleSubmit(event)">
+      <input type="email" id="email-input" placeholder="you@example.com" required autocomplete="email" />
+      <button type="submit" class="btn btn-primary">Notify me</button>
+    </form>
+    <p id="form-msg" class="mono" style="margin-top:20px;font-size:13px;color:var(--blue-hi);min-height:20px;text-align:center;"></p>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─────────────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <a href="#" class="footer-logo">
+      <img src="logo.png" alt="Bunker" />
+      <span>Bunker</span>
+    </a>
+    <ul class="footer-links">
+      <li><a href="#byoa">How it works</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#capture">Early access</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 Bunker. Local-first. No subscription.</p>
+  </div>
+</footer>
+
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    const email = document.getElementById('email-input').value.trim();
+    const msg = document.getElementById('form-msg');
+    if (!email) return;
+    msg.textContent = '✓ You\'re on the list. We\'ll be in touch.';
+    document.getElementById('email-input').value = '';
+  }
+
+  // smooth active-link highlight on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => {
+          a.style.color = a.getAttribute('href') === '#' + entry.target.id
+            ? 'var(--white)' : '';
+        });
+      }
+    });
+  }, { threshold: 0.4 });
+  sections.forEach(s => observer.observe(s));
+
+  // subtle parallax tilt on hero editor window
+  const editorWin = document.querySelector('.editor-window');
+  if (editorWin) {
+    document.addEventListener('mousemove', (e) => {
+      const cx = window.innerWidth / 2;
+      const cy = window.innerHeight / 2;
+      const dx = (e.clientX - cx) / cx;
+      const dy = (e.clientY - cy) / cy;
+      editorWin.style.transform = `perspective(900px) rotateY(${dx * 3}deg) rotateX(${-dy * 2}deg)`;
+    });
+  }
+</script>
+
+</body>
+</html>

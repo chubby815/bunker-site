@@ -1,0 +1,466 @@
+=== PORT CONTEXT ===
+          <p>Point your AI agent at <code class="mono" style="color:var(--blue-hi);font-size:12px;">localhost:3131</code>. It has full read/write/run access.</p>
+            </div>
+          </div>
+  
+
+=== COPYRIGHT CONTEXT ===
+<a href="#capture">Early access</a></li>
+    </ul>
+    <p class="footer-copy">© 2025 Bunker. Local-first. No subscription.</p>
+  </div>
+</footer>
+
+<script>
+  fu
+
+=== $99 at pos 20401 ===
+logo.png" alt="Bunker logo" />
+      <span>Bunker</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#byoa">How it works</a></li>
+      <li><a href="#models">Models</a></li>
+      <li><a href="#gamedev">Game dev</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#community">Community</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="#pricing" class="btn btn-ghost">See pricing</a>
+      <a href="#pricing" class="btn btn-primary">Get Bunker&nbsp;&nbsp;$99</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ─── HERO ──────────────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Local-first &nbsp;·&nbsp; No telemetry &nbsp;·&nbsp; One-time purchase
+      </div>
+      <h1>The code editor<br /><span class="accent">you own.</span></h1>
+      <p class="hero-sub">
+        Bring your own AI agent. It drives everything — reads files, runs commands,
+        fixes errors, streams edits live. No subscription. No telemetry. Nothing phoning home.
+      </p>
+      <div class="hero-ctas">
+        <a href="#pricing" class="btn btn-primary">Buy Bunker&nbsp;&nbsp;$99</a>
+        <a href="#byoa" class="btn btn-outline">See how it 
+
+=== $99 at pos 21137 ===
+="dot"></span>
+        Local-first &nbsp;·&nbsp; No telemetry &nbsp;·&nbsp; One-time purchase
+      </div>
+      <h1>The code editor<br /><span class="accent">you own.</span></h1>
+      <p class="hero-sub">
+        Bring your own AI agent. It drives everything — reads files, runs commands,
+        fixes errors, streams edits live. No subscription. No telemetry. Nothing phoning home.
+      </p>
+      <div class="hero-ctas">
+        <a href="#pricing" class="btn btn-primary">Buy Bunker&nbsp;&nbsp;$99</a>
+        <a href="#byoa" class="btn btn-outline">See how it works</a>
+      </div>
+      <div class="highlight-box" style="margin-top:36px;">
+        <span>📡</span>
+        <span>Command it from Telegram. Your agent runs 24/7.</span>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <!-- hero logo -->
+      <div class="hero-logo-wrap">
+        <img src="logo.png" alt="Bunker" class="hero-logo" />
+      </div>
+      <!-- fake editor window -->
+      <div class="editor-window">
+        <div class="editor-titlebar">
+          <span class="titlebar-dot dot-red"></span>
+          <span class="titlebar-dot dot-yel"></span>
+          <span class="titlebar-dot dot-grn"></span>
+          <span class="titlebar-name">game.js — Bunker</span>
+        </div>
+        <div class="editor-body
+
+=== $99 at pos 31671 ===
+ngs</span></div>
+          <div><span class="cmt">▶ 28/28 DOM checks passed</span></div>
+          <div>&nbsp;</div>
+          <div><span class="out">Done. Hard refresh and play.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── OWN IT ─────────────────────────────────────────────────────── -->
+<section id="own-it" class="section">
+  <div class="container" style="text-align:center; max-width:680px; margin:0 auto;">
+    <span class="label">Ownership</span>
+    <h2>$99 once.<br />Yours for life.<br />No invoices.</h2>
+    <p class="sub" style="margin:0 auto;">
+      We're done with the subscription model for dev tools. You pay once,
+      you own the binary, you get updates. No month where you forget to cancel
+      and get charged. No price hike email. No "your plan has been discontinued."
+    </p>
+
+    <div class="contrast-row" style="margin-top:48px; text-align:left;">
+      <div class="contrast-box bad">
+        <h3>⚠ Subscription tools</h3>
+        <ul>
+          <li><span class="cross">✕</span> $20–$40/mo, forever</li>
+          <li><span class="cross">✕</span> Telemetry on your code</li>
+          <li><span class="cross">✕</span> Their model, their terms</li>
+          <li><span class="cross">✕</span> Price goes up. You adapt.</li>
+          <li>
+
+=== $99 at pos 32689 ===
+span class="cross">✕</span> $20–$40/mo, forever</li>
+          <li><span class="cross">✕</span> Telemetry on your code</li>
+          <li><span class="cross">✕</span> Their model, their terms</li>
+          <li><span class="cross">✕</span> Price goes up. You adapt.</li>
+          <li><span class="cross">✕</span> Cancel and lose access</li>
+        </ul>
+      </div>
+      <div class="contrast-box good">
+        <h3>✦ Bunker</h3>
+        <ul>
+          <li><span class="check-blue">✓</span> <span>$99 once. That's it.</span></li>
+          <li><span class="check-blue">✓</span> <span>Zero telemetry. Air-gapped ok.</span></li>
+          <li><span class="check-blue">✓</span> <span>Your model, your keys, your terms.</span></li>
+          <li><span class="check-blue">✓</span> <span>Price is locked forever.</span></li>
+          <li><span class="check-blue">✓</span> <span>Own the binary, use it forever.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── COMMUNITY ─────────────────────────────────────────────────── -->
+<section id="community" class="section">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="label">Community</span>
+        <h2>You bought it,<br />you shape it.</h2>
+        <p class="sub">
+          Every buyer gets
+
+=== $99 at pos 37334 ===
+>
+          <div class="compare-item"><span class="cross">✕</span> <span style="color:var(--muted)">Priority community votes</span></div>
+          <div style="margin-top:24px;">
+            <a href="#capture" class="btn btn-outline" style="width:100%; justify-content:center;">Get free access</a>
+          </div>
+        </div>
+      </div>
+      <div class="compare-col featured">
+        <div class="compare-header">
+          <div class="plan">BYOA — One-time</div>
+          <div class="price">$99 <span>/ once</span></div>
+          <div class="desc">Includes Bailey, the pre-built agent. Plug in your API key and go.</div>
+        </div>
+        <div class="compare-body">
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Everything in Free</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Bailey — pre-built BYOA agent</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Telegram command interface</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Screenshot + browser console reads</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Persistent memory across sessions</span></div>
+          <div class="compare-it
+
+=== $99 at pos 38489 ===
+   <div class="compare-item"><span class="check-blue">✓</span> <span>Persistent memory across sessions</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Priority feature votes</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>All future updates — lifetime</span></div>
+          <div style="margin-top:24px;">
+            <a href="#capture" class="btn btn-primary" style="width:100%; justify-content:center;">Get Bunker — $99</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── EMAIL CAPTURE ──────────────────────────────────────────────── -->
+<section id="email">
+  <div class="container">
+    <span class="label" style="display:block;text-align:center;">Early access</span>
+    <h2>Be first in.</h2>
+    <p class="sub">Drop your email. We'll tell you when the doors open — no spam, one email.</p>
+    <form class="email-form" onsubmit="handleSubmit(event)">
+      <input type="email" id="email-input" placeholder="you@example.com" required autocomplete="email" />
+      <button type="submit" class="btn btn-primary">Notify me</button>
+    </form>
+    <p id="form-msg" class="mono" style="margin-top:20px;font-size:13px;color:var(--blue-hi);min-height:20px;text-align:center;"></p>
+  <
+
+=== MODEL PILLS at pos 10094 ===
+olor: var(--blue-dim); }
+
+  /* ─── MODEL PILLS ──────────────────────────────────────────────── */
+  .model-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 36px;
+  }
+
+  .model-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 16px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--bg2);
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--white);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    cursor: default;
+  }
+  .model-pill:hover {
+    border-color: var(--blue);
+    box-shadow: var(--glow);
+  }
+
+  .model-pill .dot-m {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+  }
+  .green-dot  { background: #28c840; box-shadow: 0 0 5px #28c840; }
+  .orange-dot { background: #ff9500; box-shadow: 0 0 5px #ff9500; }
+  .blue-dot   { background: var(--blue-hi); box-shadow: 0 0 5px var(--blue-hi); }
+  .pink-dot   { background: #ff2d55; box-shadow: 0 0 5px #ff2d55; }
+  .purple-dot { background: #bf5af2; box-shadow: 0 0 5px #bf5af2; }
+
+  /* ─── COMPARE TABLE ────────────────────────────────────────────── */
+  .compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 52px;
+  }
+
+  .compare-col {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .compare-col.featured {
+    border
+
+=== ROADMAP [roadmap] at 26802 ===
+      You bring the API key. Bunker doesn't touch it. You're not locked to
+          anyone's model roadmap.
+        </p>
+        <div class="model-grid">
+          <div class="model-pill"><span class="dot-m orange-dot"></span>Claude 3.5 Sonnet</div>
+          <div class="model-pill"><span class="dot-m green-dot"></span>GPT-4o</div>
+          <div class="model-pill"><span class="dot-m blue-dot"></span>Gemini 1.5 Pro</div>
+          <div class="model-pill"><span class="dot-m pink-dot"></span>Grok 2</div>
+          <div class="model-pill"><span class="dot-m purple-dot"></span>Llama 3 (Ollama)</div>
+          <div class="model-pill"><span class="dot-m green-dot"></span>Mistral</div>
+          <div class="model-pill"><span class="dot-m blue-dot"></span>DeepSeek R1</div>
+          <div class="model-pill" style="border-style:dashed; color:var(--muted);">+ any OpenAI-compat</div>
+        </div>
+      </div>
+      <div>
+        <div class="code-block">
+          <div><span class="cmt"># Switch model in one line</span></div>
+          <div>&nbsp;</div>
+          <div><span class="cmd">BUNKER_MODEL</span>=<span class="out">claude-3-5-sonnet-20241022</span></div>
+          <div><span class="cmd">BUNKER_MODEL</span>=<span class="out">gpt-4o</span></div>
+          <div><span class="cmd">BUNKER_MODEL</span>=<span class="out">ollama/llama3</span>&nbsp;&nbsp;<span class="cmt"># free, local</span></div>
+          <div>&nbsp;</div>
+          <div><span class="cmt"># Your keys, loaded from .env</span></div>
+          <div><span class="cmd">ANTHROPIC_API_KEY</span>=<span class="out">sk-ant-...</span></div>
+          <div><span class="cmd">OPENAI_API_KEY</span>=<span class="out">sk-...</span></div>
+          <div>&nbsp;</div>
+          <div><span class="cmt"># Bunker never sees these keys.</span></div>
+          <div><span class="cmt"># They never leave your machine.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── GAME DEV ───────────────────────────────────────────────────── -->
+<section id="gamedev" class="section">
+  <div class="container">
+    <di
+
+=== BYOA/BAILEY at 20014 ===
+
+  }
+
+</style>
+</head>
+<body>
+
+<!-- ─── NAV ──────────────────────────────────────────────────────── -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <img src="logo.png" alt="Bunker logo" />
+      <span>Bunker</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#byoa">How it works</a></li>
+      <li><a href="#models">Models</a></li>
+      <li><a href="#gamedev">Game dev</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#community">Community</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="#pricing" class="btn btn-ghost">See 
+
+=== BYOA/BAILEY at 21163 ===
+own AI agent. It drives everything — reads files, runs commands,
+        fixes errors, streams edits live. No subscription. No telemetry. Nothing phoning home.
+      </p>
+      <div class="hero-ctas">
+        <a href="#pricing" class="btn btn-primary">Buy Bunker&nbsp;&nbsp;$99</a>
+        <a href="#byoa" class="btn btn-outline">See how it works</a>
+      </div>
+      <div class="highlight-box" style="margin-top:36px;">
+        <span>📡</span>
+        <span>Command it from Telegram. Your agent runs 24/7.</span>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <!-- hero logo -->
+      <div
+
+=== BYOA/BAILEY at 23197 ===
+="ln">7</span>&nbsp;</div>
+          <div><span class="ln">8</span><span class="cm">// ✓ written · ✓ verified · ✓ running</span></div>
+          <div><span class="ln">9</span><span class="hi">// agent finished in 4.2s</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BYOA ───────────────────────────────────────────────────────── -->
+<section id="byoa" class="section">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="label">How it works</span>
+        <h2>Your agent runs<br />the show.</h2>
+        <p class="sub">
+          Bunker ex
+
+=== BYOA/BAILEY at 23277 ===
+cm">// ✓ written · ✓ verified · ✓ running</span></div>
+          <div><span class="ln">9</span><span class="hi">// agent finished in 4.2s</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BYOA ───────────────────────────────────────────────────────── -->
+<section id="byoa" class="section">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="label">How it works</span>
+        <h2>Your agent runs<br />the show.</h2>
+        <p class="sub">
+          Bunker exposes a local API. Your AI agent connects, reads your files,
+          runs term
+
+=== BYOA/BAILEY at 36663 ===
+em"><span class="check">✓</span> <span>Any model via your own key</span></div>
+          <div class="compare-item"><span class="check">✓</span> <span>File read/write/run commands</span></div>
+          <div class="compare-item"><span class="cross">✕</span> <span style="color:var(--muted)">Pre-built BYOA agent (Bailey)</span></div>
+          <div class="compare-item"><span class="cross">✕</span> <span style="color:var(--muted)">Telegram command integration</span></div>
+          <div class="compare-item"><span class="cross">✕</span> <span style="color:var(--muted)">Priority community votes</span></
+
+=== BYOA/BAILEY at 36675 ===
+ass="check">✓</span> <span>Any model via your own key</span></div>
+          <div class="compare-item"><span class="check">✓</span> <span>File read/write/run commands</span></div>
+          <div class="compare-item"><span class="cross">✕</span> <span style="color:var(--muted)">Pre-built BYOA agent (Bailey)</span></div>
+          <div class="compare-item"><span class="cross">✕</span> <span style="color:var(--muted)">Telegram command integration</span></div>
+          <div class="compare-item"><span class="cross">✕</span> <span style="color:var(--muted)">Priority community votes</span></div>
+         
+
+=== BYOA/BAILEY at 37283 ===
+div style="margin-top:24px;">
+            <a href="#capture" class="btn btn-outline" style="width:100%; justify-content:center;">Get free access</a>
+          </div>
+        </div>
+      </div>
+      <div class="compare-col featured">
+        <div class="compare-header">
+          <div class="plan">BYOA — One-time</div>
+          <div class="price">$99 <span>/ once</span></div>
+          <div class="desc">Includes Bailey, the pre-built agent. Plug in your API key and go.</div>
+        </div>
+        <div class="compare-body">
+          <div class="compare-item"><span class="check-blue">✓</span> <s
+
+=== BYOA/BAILEY at 37401 ===
+t:center;">Get free access</a>
+          </div>
+        </div>
+      </div>
+      <div class="compare-col featured">
+        <div class="compare-header">
+          <div class="plan">BYOA — One-time</div>
+          <div class="price">$99 <span>/ once</span></div>
+          <div class="desc">Includes Bailey, the pre-built agent. Plug in your API key and go.</div>
+        </div>
+        <div class="compare-body">
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Everything in Free</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Bailey —
+
+=== BYOA/BAILEY at 37699 ===
+s Bailey, the pre-built agent. Plug in your API key and go.</div>
+        </div>
+        <div class="compare-body">
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Everything in Free</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Bailey — pre-built BYOA agent</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Telegram command interface</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Screenshot + browser console reads</span></div>
+          <div class="c
+
+=== BYOA/BAILEY at 37718 ===
+uilt agent. Plug in your API key and go.</div>
+        </div>
+        <div class="compare-body">
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Everything in Free</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Bailey — pre-built BYOA agent</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Telegram command interface</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Screenshot + browser console reads</span></div>
+          <div class="compare-item"><spa
+
+=== BYOA/BAILEY at 39588 ===
+
+  </div>
+</section>
+
+<!-- ─── FOOTER ─────────────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <a href="#" class="footer-logo">
+      <img src="logo.png" alt="Bunker" />
+      <span>Bunker</span>
+    </a>
+    <ul class="footer-links">
+      <li><a href="#byoa">How it works</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#capture">Early access</a></li>
+    </ul>
+    <p class="footer-copy">© 2025 Bunker. Local-first. No subscription.</p>
+  </div>
+</footer>
+
+<script>
+  function han

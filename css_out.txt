@@ -1,0 +1,208 @@
+
+--- LINES 155-215 ---
+L155:     justify-content: space-between;
+L156:   }
+L157: 
+L158:   .nav-logo {
+L159:     display: flex;
+L160:     align-items: center;
+L161:     gap: 10px;
+L162:     text-decoration: none;
+L163:   }
+L164: 
+L165:   .nav-logo img {
+L166:     width: 30px;
+L167:     height: 30px;
+L168:     object-fit: contain;
+L169:     filter: drop-shadow(0 0 6px rgba(30,144,255,0.6));
+L170:   }
+L171: 
+L172:   .nav-logo span {
+L173:     font-size: 17px;
+L174:     font-weight: 700;
+L175:     color: var(--white);
+L176:     letter-spacing: -0.02em;
+L177:     font-family: var(--mono);
+L178:   }
+L179: 
+L180:   .nav-links {
+L181:     display: flex;
+L182:     align-items: center;
+L183:     gap: 32px;
+L184:     list-style: none;
+L185:   }
+L186: 
+L187:   .nav-links a {
+L188:     font-size: 14px;
+L189:     color: var(--muted);
+L190:     text-decoration: none;
+L191:     transition: color 0.15s;
+L192:   }
+L193:   .nav-links a:hover { color: var(--white); }
+L194: 
+L195:   .nav-right {
+L196:     display: flex;
+L197:     align-items: center;
+L198:     gap: 16px;
+L199:   }
+L200: 
+L201:   /* ─── HERO ─────────────────────────────────────────────────────── */
+L202:   #hero {
+L203:     padding: 160px 0 120px;
+L204:     border-bottom: 1px solid var(--border);
+L205:     position: relative;
+L206:     overflow: hidden;
+L207:   }
+L208: 
+L209:   /* subtle grid bg */
+L210:   #hero::before {
+L211:     content: '';
+L212:     position: absolute;
+L213:     inset: 0;
+L214:     background-image:
+L215:       linear-gradient(rgba(30,144,255,0.04) 1px, transparent 1px),
+
+--- LINES 355-380 ---
+L355:   .pn  { color: var(--white); }
+L356:   .hi  { color: var(--blue-hi); }
+L357: 
+L358:   /* ─── LOGO HERO ACCENT ─────────────────────────────────────────── */
+L359:   .hero-logo-wrap {
+L360:     display: flex;
+L361:     justify-content: center;
+L362:     margin-bottom: 48px;
+L363:   }
+L364: 
+L365:   .hero-logo {
+L366:     width: 80px;
+L367:     height: 80px;
+L368:     object-fit: contain;
+L369:     filter: drop-shadow(0 0 20px rgba(30,144,255,0.7));
+L370:   }
+L371: 
+L372:   /* ─── FEATURE CARD ─────────────────────────────────────────────── */
+L373:   .feature-grid {
+L374:     display: grid;
+L375:     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+L376:     gap: 1px;
+L377:     background: var(--border);
+L378:     border: 1px solid var(--border);
+L379:     border-radius: 10px;
+L380:     overflow: hidden;
+
+--- LINES 705-735 ---
+L705:     gap: 20px;
+L706:   }
+L707: 
+L708:   .footer-logo {
+L709:     display: flex;
+L710:     align-items: center;
+L711:     gap: 8px;
+L712:     text-decoration: none;
+L713:   }
+L714: 
+L715:   .footer-logo img {
+L716:     width: 22px;
+L717:     height: 22px;
+L718:     object-fit: contain;
+L719:     filter: drop-shadow(0 0 4px rgba(30,144,255,0.5));
+L720:   }
+L721: 
+L722:   .footer-logo span {
+L723:     font-family: var(--mono);
+L724:     font-size: 14px;
+L725:     color: var(--muted);
+L726:   }
+L727: 
+L728:   .footer-copy {
+L729:     font-size: 13px;
+L730:     color: var(--muted);
+L731:     font-family: var(--mono);
+L732:   }
+L733: 
+L734:   .footer-links {
+L735:     display: flex;
+
+--- LINES 870-915 ---
+L870:     .section { padding: 80px 0; }
+L871:     #hero { padding: 100px 0 80px; }
+L872:   }
+L873: 
+L874:   /* ─── LOGO IMG OVERRIDES ───────────────────────────────────────── */
+L875:   .nav-logo-img {
+L876:     width: 36px;
+L877:     height: 36px;
+L878:     object-fit: contain;
+L879:     mix-blend-mode: lighten;
+L880:     filter: drop-shadow(0 0 8px rgba(30,144,255,0.75))
+L881:             drop-shadow(0 0 2px rgba(0,191,255,0.5));
+L882:     vertical-align: middle;
+L883:   }
+L884: 
+L885:   .hero-logo-img {
+L886:     width: 140px;
+L887:     height: 140px;
+L888:     object-fit: contain;
+L889:     mix-blend-mode: lighten;
+L890:     filter: drop-shadow(0 0 24px rgba(30,144,255,0.8))
+L891:             drop-shadow(0 0 8px rgba(0,191,255,0.6));
+L892:     display: block;
+L893:   }
+L894: 
+L895:   .footer-logo-img {
+L896:     width: 24px;
+L897:     height: 24px;
+L898:     object-fit: contain;
+L899:     mix-blend-mode: lighten;
+L900:     filter: drop-shadow(0 0 5px rgba(30,144,255,0.6));
+L901:     vertical-align: middle;
+L902:   }
+L903: </style>
+L904: </head>
+L905: <body>
+L906: 
+L907: <!-- ─── NAV ──────────────────────────────────────────────────────── -->
+L908: <nav>
+L909:   <div class="nav-inner">
+L910:     <a href="#" class="nav-logo">
+L911:       <img src="logo.png" alt="Bunker logo" class="nav-logo-img" />
+L912:       <span>Bunker</span>
+L913:     </a>
+L914:     <ul class="nav-links">
+L915:       <li><a href="#byoa">How it works</a></li>
+
+--- LINES 950-965 ---
+L950: 
+L951:     <div class="hero-right">
+L952:       <!-- hero logo -->
+L953:       <div class="hero-logo-wrap">
+L954:         <img src="logo.png" alt="Bunker" class="hero-logo-img" />
+L955:       </div>
+L956:       <!-- fake editor window -->
+L957:       <div class="editor-window">
+L958:         <div class="editor-titlebar">
+L959:           <span class="titlebar-dot dot-red"></span>
+L960:           <span class="titlebar-dot dot-yel"></span>
+L961:           <span class="titlebar-dot dot-grn"></span>
+L962:           <span class="titlebar-name">game.js — Bunker</span>
+L963:         </div>
+L964:         <div class="editor-body">
+L965:           <div><span class="ln">1</span><span class="cm">// agent: "add enemy AI with flood-fill"</span></div>
+
+--- LINES 1300-1315 ---
+L1300:   </div>
+L1301: </section>
+L1302: 
+L1303: <!-- ─── FOOTER ─────────────────────────────────────────────────────── -->
+L1304: <footer>
+L1305:   <div class="footer-inner">
+L1306:     <a href="#" class="footer-logo">
+L1307:       <img src="logo.png" alt="Bunker" class="hero-logo-img" />
+L1308:       <span>Bunker</span>
+L1309:     </a>
+L1310:     <ul class="footer-links">
+L1311:       <li><a href="#byoa">How it works</a></li>
+L1312:       <li><a href="#pricing">Pricing</a></li>
+L1313:       <li><a href="#community">Community</a></li>
+L1314:       <li><a href="#capture">Early access</a></li>
+L1315:     </ul>

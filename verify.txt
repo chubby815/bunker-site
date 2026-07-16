@@ -1,0 +1,25 @@
+PATCH: Grok 4 pill injected after Grok 4.5
+Free tier: Agent API crossed-out line OK
+
+=== FINAL VERIFY ===
+localhost:3131:             0
+127.0.0.1:3847:            1
+2025 remaining:            0
+2026:                      1
+Claude Sonnet 5:           1
+Claude Opus 4.8:           1
+GPT-5.6:                   2
+Gemini 3.5 Flash:          2
+Gemini 3.1 Pro:            1
+Grok 4.5:                  2
+Grok 4 pill:               True
+Qwen2.5-Coder:             1
+DeepSeek (Ollama):         1
+Llama (Ollama):            1
+Includes Bailey in $99:    False
+Agent API line in $99:     True
+Connect any AI agent:      True
+claude-sonnet-5:           True
+Free tier no-agent-api:    True
+
+ALL_OK: True

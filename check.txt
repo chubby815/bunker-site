@@ -1,0 +1,17 @@
+=== GROK LINES ===
+Claude Opus 4.8, Sonnet 5, GPT-5.6, Gemini 3.5 Flash, Gemini 3.1 Pro, Grok 4.5, Grok 4 — or run Qwen2.5-Coder, DeepSeek, or Llama locally with Ollama.
+<div class="model-pill"><span class="dot-m pink-dot"></span>Grok 4.5</div>
+
+=== PRICING COMPARE ITEMS ===
+
+=== BYOA BLOCK at 37366 ===
+BYOA — One-time</div>
+          <div class="price">$99 <span>/ once</span></div>
+          <div class="desc">Unlock the Agent API. Connect any AI agent — Python, Node, anything — to drive your editor.</div>
+        </div>
+        <div class="compare-body">
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Everything in Free</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Agent API — connect any agent (Python, Node, anything)</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Telegram command interface</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Screenshot + browser console reads</span></div>
+          <div class="compare-item"><span class="ch

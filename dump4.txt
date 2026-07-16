@@ -1,0 +1,364 @@
+ No cloud dependency.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <div class="step-body">
+              <h3>Connect your agent</h3>
+              <p>Point your AI agent at <code class="mono" style="color:var(--blue-hi);font-size:12px;">127.0.0.1:3847</code>. It has full read/write/run access.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <div class="step-body">
+              <h3>Message from anywhere</h3>
+              <p>Send a Telegram message. Your agent codes, tests, and fixes — you review.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="code-block">
+          <div><span class="cmt"># Telegram → agent → Bunker</span></div>
+          <div>&nbsp;</div>
+          <div><span class="prompt">you@telegram:</span> <span class="cmd">add a flood-fill AI to game.js</span></div>
+          <div>&nbsp;</div>
+          <div><span class="cmt">▶ agent reading game.js (37 KB)</span></div>
+          <div><span class="cmt">▶ locating setupArena() at line 412</span></div>
+          <div><span class="cmt">▶ writing aiDecide() — BFS, 3-direction</span></div>
+          <div><span class="cmt">▶ writing arenaBike2 — magenta, opposite grid</span></div>
+          <div><span class="cmt">▶ running node --check game.js</span></div>
+          <div><span class="out">✓ PARSE_OK</span></div>
+          <div><span class="cmt">▶ verifying: aiDecide present — true</span></div>
+          <div><span class="cmt">▶ verifying: arenaBike2 present — true</span></div>
+          <div>&nbsp;</div>
+          <div><span class="out">Done. 11/11 checks passed.</span></div>
+          <div><span class="cmt">elapsed: 4.2s</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat">
+        <span class="num">0</span>
+        <span class="lbl">monthly fees</span>
+      </div>
+      <div class="stat">
+        <span class="num">∞</span>
+        <span class="lbl">AI models supported</span>
+      </div>
+      <div class="stat">
+        <span class="num">100%</span>
+        <span class="lbl">local — your machine</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ANY MODEL ─────────────────────────────────────────────────── -->
+<section id="models" class="section">
+  <div class="container">
+    <div class="split reverse">
+      <div>
+        <span class="label">Model Agnostic</span>
+        <h2>Any model.<br />Your keys.<br />Your machine.</h2>
+        <p class="sub">
+          Claude Opus 4.8, Sonnet 5, GPT-5.6, Gemini 3.5 Flash, Gemini 3.1 Pro, Grok 4.5, Grok 4 — or run Qwen2.5-Coder, DeepSeek, or Llama locally with Ollama.
+          You bring the API key. Bunker doesn't touch it. You're not locked to
+          anyone's model roadmap.
+        </p>
+        <div class="model-grid">
+          <div class="model-pill"><span class="dot-m orange-dot"></span>Claude Sonnet 5</div>
+          <div class="model-pill"><span class="dot-m green-dot"></span>GPT-5.6</div>
+          <div class="model-pill"><span class="dot-m blue-dot"></span>Gemini 3.5 Flash</div>
+          <div class="model-pill"><span class="dot-m pink-dot"></span>Grok 4.5</div>
+          <div class="model-pill"><span class="dot-m pink-dot"></span>Grok 4</div>
+          <div class="model-pill"><span class="dot-m purple-dot"></span>Llama (Ollama)</div>
+          <div class="model-pill"><span class="dot-m green-dot"></span>Mistral</div>
+          <div class="model-pill"><span class="dot-m blue-dot"></span>DeepSeek (Ollama)</div>
+          <div class="model-pill" style="border-style:dashed; color:var(--muted);">+ any OpenAI-compat</div>
+        </div>
+      </div>
+      <div>
+        <div class="code-block">
+          <div><span class="cmt"># Switch model in one line</span></div>
+          <div>&nbsp;</div>
+          <div><span class="cmd">BUNKER_MODEL</span>=<span class="out">claude-sonnet-5</span></div>
+          <div><span class="cmd">BUNKER_MODEL</span>=<span class="out">gpt-4o</span></div>
+          <div><span class="cmd">BUNKER_MODEL</span>=<span class="out">ollama/llama3</span>&nbsp;&nbsp;<span class="cmt"># free, local</span></div>
+          <div>&nbsp;</div>
+          <div><span class="cmt"># Your keys, loaded from .env</span></div>
+          <div><span class="cmd">ANTHROPIC_API_KEY</span>=<span class="out">sk-ant-...</span></div>
+          <div><span class="cmd">OPENAI_API_KEY</span>=<span class="out">sk-...</span></div>
+          <div>&nbsp;</div>
+          <div><span class="cmt"># Bunker never sees these keys.</span></div>
+          <div><span class="cmt"># They never leave your machine.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── GAME DEV ───────────────────────────────────────────────────── -->
+<section id="gamedev" class="section">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="label">Built for Game Dev</span>
+        <h2>The models can do game dev.<br />The tooling couldn't.</h2>
+        <p class="sub">
+          Multi-file coherence, live streaming edits, agent reads its own runtime errors
+          and browser screenshots. Build a full 3D game in an afternoon — agent writes,
+          runs, sees the error, fixes it, and tells you when it's done.
+        </p>
+        <div class="feature-grid" style="margin-top:40px;">
+          <div class="feature-card">
+            <span class="feature-icon">🗂</span>
+            <h3>Multi-file coherence</h3>
+            <p>Agent tracks game.js, index.html, and style.css simultaneously without losing context.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">📡</span>
+            <h3>Live streaming edits</h3>
+            <p>Watch the file update character by character as the agent types. No waiting for a big paste.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🖥</span>
+            <h3>Reads its own errors</h3>
+            <p>Browser console output and stack traces pipe back to the agent. It debugs itself.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">📸</span>
+            <h3>Screenshot feedback</h3>
+            <p>Agent takes a screenshot, sees the result visually, and adjusts layout or design without you narrating it.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="code-block">
+          <div><span class="cmt"># Real session — Space Shooter build</span></div>
+          <div>&nbsp;</div>
+          <div><span class="prompt">you:</span> <span class="cmd">make enemies brighter, add CoD crosshair</span></div>
+          <div>&nbsp;</div>
+          <div><span class="cmt">▶ reading game.js (18 KB)</span></div>
+          <div><span class="cmt">▶ reading style.css</span></div>
+          <div><span class="cmt">▶ patching buildUFO() — emissive ×2.5</span></div>
+          <div><span class="cmt">▶ adding SVG crosshair to index.html</span></div>
+          <div><span class="cmt">▶ adding muzzle flash, screen shake</span></div>
+          <div><span class="cmt">▶ running browserConsole check</span></div>
+          <div><span class="out">✓ 0 errors, 0 warnings</span></div>
+          <div><span class="cmt">▶ 28/28 DOM checks passed</span></div>
+          <div>&nbsp;</div>
+          <div><span class="out">Done. Hard refresh and play.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── OWN IT ─────────────────────────────────────────────────────── -->
+<section id="own-it" class="section">
+  <div class="container" style="text-align:center; max-width:680px; margin:0 auto;">
+    <span class="label">Ownership</span>
+    <h2>$99 once.<br />Yours for life.<br />No invoices.</h2>
+    <p class="sub" style="margin:0 auto;">
+      We're done with the subscription model for dev tools. You pay once,
+      you own the binary, you get updates. No month where you forget to cancel
+      and get charged. No price hike email. No "your plan has been discontinued."
+    </p>
+
+    <div class="contrast-row" style="margin-top:48px; text-align:left;">
+      <div class="contrast-box bad">
+        <h3>⚠ Subscription tools</h3>
+        <ul>
+          <li><span class="cross">✕</span> $20–$40/mo, forever</li>
+          <li><span class="cross">✕</span> Telemetry on your code</li>
+          <li><span class="cross">✕</span> Their model, their terms</li>
+          <li><span class="cross">✕</span> Price goes up. You adapt.</li>
+          <li><span class="cross">✕</span> Cancel and lose access</li>
+        </ul>
+      </div>
+      <div class="contrast-box good">
+        <h3>✦ Bunker</h3>
+        <ul>
+          <li><span class="check-blue">✓</span> <span>$99 once. That's it.</span></li>
+          <li><span class="check-blue">✓</span> <span>Zero telemetry. Air-gapped ok.</span></li>
+          <li><span class="check-blue">✓</span> <span>Your model, your keys, your terms.</span></li>
+          <li><span class="check-blue">✓</span> <span>Price is locked forever.</span></li>
+          <li><span class="check-blue">✓</span> <span>Own the binary, use it forever.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── COMMUNITY ─────────────────────────────────────────────────── -->
+<section id="community" class="section">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="label">Community</span>
+        <h2>You bought it,<br />you shape it.</h2>
+        <p class="sub">
+          Every buyer gets a vote. The roadmap is public. Top-voted features ship first.
+          No enterprise customers jumping your request. No product manager deciding
+          what matters. The people actually using Bunker decide what it becomes.
+        </p>
+        <a href="#capture" class="btn btn-outline" style="margin-top:32px;">Join the waitlist</a>
+      </div>
+      <div>
+        <p class="mono" style="font-size:12px; color:var(--muted); margin-bottom:20px; letter-spacing:0.08em;">CURRENT FEATURE VOTES</p>
+        <div class="vote-items">
+          <div class="vote-item">
+            <span class="vote-label">Agent screenshot feedback</span>
+            <div class="vote-bar-wrap"><div class="vote-bar" style="width:91%"></div></div>
+            <span class="vote-pct">91%</span>
+          </div>
+          <div class="vote-item">
+            <span class="vote-label">Multi-agent support</span>
+            <div class="vote-bar-wrap"><div class="vote-bar" style="width:78%"></div></div>
+            <span class="vote-pct">78%</span>
+          </div>
+          <div class="vote-item">
+            <span class="vote-label">Git diff viewer</span>
+            <div class="vote-bar-wrap"><div class="vote-bar" style="width:65%"></div></div>
+            <span class="vote-pct">65%</span>
+          </div>
+          <div class="vote-item">
+            <span class="vote-label">Voice command mode</span>
+            <div class="vote-bar-wrap"><div class="vote-bar" style="width:54%"></div></div>
+            <span class="vote-pct">54%</span>
+          </div>
+          <div class="vote-item">
+            <span class="vote-label">Built-in Ollama manager</span>
+            <div class="vote-bar-wrap"><div class="vote-bar" style="width:48%"></div></div>
+            <span class="vote-pct">48%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PRICING ───────────────────────────────────────────────────── -->
+<section id="pricing" class="section">
+  <div class="container">
+    <div style="text-align:center; max-width:560px; margin:0 auto 60px;">
+      <span class="label">Pricing</span>
+      <h2>Simple. One-time. No tricks.</h2>
+      <p class="sub" style="margin:0 auto;">Two tiers. Both run locally. No data leaves your machine.</p>
+    </div>
+    <div class="compare">
+      <div class="compare-col">
+        <div class="compare-header">
+          <div class="plan">Free — BYOK</div>
+          <div class="price">$0 <span>/ forever</span></div>
+          <div class="desc">Bring your own API key. You handle the agent setup.</div>
+        </div>
+        <div class="compare-body">
+          <div class="compare-item"><span class="check">✓</span> <span>Bunker editor — full access</span></div>
+          <div class="compare-item"><span class="check">✓</span> <span>Local API for your agent</span></div>
+          <div class="compare-item"><span class="check">✓</span> <span>Any model via your own key</span></div>
+          <div class="compare-item"><span class="check">✓</span> <span>File read/write/run commands</span></div>
+          <div class="compare-item"><span class="cross">✕</span> <span style="color:var(--muted)">Agent API (no external agent control)</span></div>
+          <div class="compare-item"><span class="cross">✕</span> <span style="color:var(--muted)">Telegram command integration</span></div>
+          <div class="compare-item"><span class="cross">✕</span> <span style="color:var(--muted)">Priority community votes</span></div>
+          <div style="margin-top:24px;">
+            <a href="#capture" class="btn btn-outline" style="width:100%; justify-content:center;">Get free access</a>
+          </div>
+        </div>
+      </div>
+      <div class="compare-col featured">
+        <div class="compare-header">
+          <div class="plan">BYOA — One-time</div>
+          <div class="price">$99 <span>/ once</span></div>
+          <div class="desc">Unlock the Agent API. Connect any AI agent — Python, Node, anything — to drive your editor.</div>
+        </div>
+        <div class="compare-body">
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Everything in Free</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Agent API — connect any agent (Python, Node, anything)</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Telegram command interface</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Screenshot + browser console reads</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Persistent memory across sessions</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Priority feature votes</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>All future updates — lifetime</span></div>
+          <div style="margin-top:24px;">
+            <a href="#capture" class="btn btn-primary" style="width:100%; justify-content:center;">Get Bunker — $99</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── EMAIL CAPTURE ──────────────────────────────────────────────── -->
+<section id="email">
+  <div class="container">
+    <span class="label" style="display:block;text-align:center;">Early access</span>
+    <h2>Be first in.</h2>
+    <p class="sub">Drop your email. We'll tell you when the doors open — no spam, one email.</p>
+    <form class="email-form" onsubmit="handleSubmit(event)">
+      <input type="email" id="email-input" placeholder="you@example.com" required autocomplete="email" />
+      <button type="submit" class="btn btn-primary">Notify me</button>
+    </form>
+    <p id="form-msg" class="mono" style="margin-top:20px;font-size:13px;color:var(--blue-hi);min-height:20px;text-align:center;"></p>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─────────────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <a href="#" class="footer-logo">
+      <img src="logo.png" alt="Bunker" />
+      <span>Bunker</span>
+    </a>
+    <ul class="footer-links">
+      <li><a href="#byoa">How it works</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#capture">Early access</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 Bunker. Local-first. No subscription.</p>
+  </div>
+</footer>
+
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    const email = document.getElementById('email-input').value.trim();
+    const msg = document.getElementById('form-msg');
+    if (!email) return;
+    msg.textContent = '✓ You\'re on the list. We\'ll be in touch.';
+    document.getElementById('email-input').value = '';
+  }
+
+  // smooth active-link highlight on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => {
+          a.style.color = a.getAttribute('href') === '#' + entry.target.id
+            ? 'var(--white)' : '';
+        });
+      }
+    });
+  }, { threshold: 0.4 });
+  sections.forEach(s => observer.observe(s));
+
+  // subtle parallax tilt on hero editor window
+  const editorWin = document.querySelector('.editor-window');
+  if (editorWin) {
+    document.addEventListener('mousemove', (e) => {
+      const cx = window.innerWidth / 2;
+      const cy = window.innerHeight / 2;
+      const dx = (e.clientX - cx) / cx;
+      const dy = (e.clientY - cy) / cy;
+      editorWin.style.transform = `perspective(900px) rotateY(${dx * 3}deg) rotateX(${-dy * 2}deg)`;
+    });
+  }
+</script>
+
+</body>
+</html>

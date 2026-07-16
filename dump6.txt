@@ -1,0 +1,85 @@
+class="check-blue">✓</span> <span>Telegram command interface</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Screenshot + browser console reads</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Persistent memory across sessions</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>Priority feature votes</span></div>
+          <div class="compare-item"><span class="check-blue">✓</span> <span>All future updates — lifetime</span></div>
+          <div style="margin-top:24px;">
+            <a href="#capture" class="btn btn-primary" style="width:100%; justify-content:center;">Get Bunker — $99</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── EMAIL CAPTURE ──────────────────────────────────────────────── -->
+<section id="email">
+  <div class="container">
+    <span class="label" style="display:block;text-align:center;">Early access</span>
+    <h2>Be first in.</h2>
+    <p class="sub">Drop your email. We'll tell you when the doors open — no spam, one email.</p>
+    <form class="email-form" onsubmit="handleSubmit(event)">
+      <input type="email" id="email-input" placeholder="you@example.com" required autocomplete="email" />
+      <button type="submit" class="btn btn-primary">Notify me</button>
+    </form>
+    <p id="form-msg" class="mono" style="margin-top:20px;font-size:13px;color:var(--blue-hi);min-height:20px;text-align:center;"></p>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─────────────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <a href="#" class="footer-logo">
+      <img src="logo.png" alt="Bunker" />
+      <span>Bunker</span>
+    </a>
+    <ul class="footer-links">
+      <li><a href="#byoa">How it works</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#capture">Early access</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 Bunker. Local-first. No subscription.</p>
+  </div>
+</footer>
+
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    const email = document.getElementById('email-input').value.trim();
+    const msg = document.getElementById('form-msg');
+    if (!email) return;
+    msg.textContent = '✓ You\'re on the list. We\'ll be in touch.';
+    document.getElementById('email-input').value = '';
+  }
+
+  // smooth active-link highlight on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => {
+          a.style.color = a.getAttribute('href') === '#' + entry.target.id
+            ? 'var(--white)' : '';
+        });
+      }
+    });
+  }, { threshold: 0.4 });
+  sections.forEach(s => observer.observe(s));
+
+  // subtle parallax tilt on hero editor window
+  const editorWin = document.querySelector('.editor-window');
+  if (editorWin) {
+    document.addEventListener('mousemove', (e) => {
+      const cx = window.innerWidth / 2;
+      const cy = window.innerHeight / 2;
+      const dx = (e.clientX - cx) / cx;
+      const dy = (e.clientY - cy) / cy;
+      editorWin.style.transform = `perspective(900px) rotateY(${dx * 3}deg) rotateX(${-dy * 2}deg)`;
+    });
+  }
+</script>
+
+</body>
+</html>

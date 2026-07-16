@@ -1,0 +1,40 @@
+logo.png references: 3
+mix-blend-mode: lighten instances: 3
+
+All logo img tags (3):
+  <img src="logo.png" alt="Bunker logo" class="nav-logo-img" />
+  <img src="logo.png" alt="Bunker" />
+  <img src="logo.png" alt="Bunker" />
+
+CSS match for \.nav-logo img \{[^}]*\}...:
+  .nav-logo img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    mix-blend-mode: lighten;
+    filter: drop-shadow(0 0 8px rgba(30,144,255,0.75));
+    vertical-align: middle;
+  }
+
+CSS match for \.hero-logo[^{]*\{[^}]*\}...:
+  .hero-logo-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+  }
+  .hero-logo, .hero-logo-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    mix-blend-mode: lighten;
+    filter: drop-shadow(0 0 24px rgba(30,144,255,0.85)) drop-shadow(0 0 8px rgba(0,191,255,0.5));
+  }
+
+CSS match for \.footer-logo img \{[^}]*\}...:
+  .footer-logo img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    mix-blend-mode: lighten;
+    filter: drop-shadow(0 0 5px rgba(30,144,255,0.6));
+  }

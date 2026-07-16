@@ -1,0 +1,7 @@
+Total logo img tags: 3
+  [0] <img src="logo.png" alt="Bunker logo" />
+  [1] <img src="logo.png" alt="Bunker" class="hero-logo" />
+  [2] <img src="logo.png" alt="Bunker" />
+
+mix-blend-mode count: 3
+logo.png count: 3

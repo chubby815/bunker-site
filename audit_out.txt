@@ -1,0 +1,60 @@
+TOTAL CHARS: 41223
+  localhost:3131: 1
+  3847: 0
+  2025: 1
+  2026: 0
+  Claude: 2
+  GPT: 2
+  Grok: 2
+  Gemini: 2
+  Ollama: 3
+  Vote: 0
+  video: 0
+  contact: 0
+  screenshot: 5
+  hello@bunker: 0
+L817: .vote-items {
+L824: .vote-item {
+L834: .vote-item:hover { border-color: var(--blue); }
+L836: .vote-bar-wrap {
+L844: .vote-bar {
+L851: .vote-label {
+L857: .vote-pct {
+L993: <p>Point your AI agent at <code class="mono" style="color:var(--blue-hi);font-size:12px;">localhost:3131</code>. It has full read/write/run 
+L1051: Claude, GPT-4o, Gemini, Grok — or run Llama 3 free with Ollama locally.
+L1057: <div class="model-pill"><span class="dot-m green-dot"></span>GPT-4o</div>
+L1058: <div class="model-pill"><span class="dot-m blue-dot"></span>Gemini 1.5 Pro</div>
+L1059: <div class="model-pill"><span class="dot-m pink-dot"></span>Grok 2</div>
+L1060: <div class="model-pill"><span class="dot-m purple-dot"></span>Llama 3 (Ollama)</div>
+L1071: <div><span class="cmd">BUNKER_MODEL</span>=<span class="out">gpt-4o</span></div>
+L1072: <div><span class="cmd">BUNKER_MODEL</span>=<span class="out">ollama/llama3</span>&nbsp;&nbsp;<span class="cmt"># free, local</span></div>
+L1095: and browser screenshots. Build a full 3D game in an afternoon — agent writes,
+L1116: <h3>Screenshot feedback</h3>
+L1117: <p>Agent takes a screenshot, sees the result visually, and adjusts layout or design without you narrating it.</p>
+L1187: Every buyer gets a vote. The roadmap is public. Top-voted features ship first.
+L1194: <p class="mono" style="font-size:12px; color:var(--muted); margin-bottom:20px; letter-spacing:0.08em;">CURRENT FEATURE VOTES</p>
+L1195: <div class="vote-items">
+L1196: <div class="vote-item">
+L1197: <span class="vote-label">Agent screenshot feedback</span>
+L1198: <div class="vote-bar-wrap"><div class="vote-bar" style="width:91%"></div></div>
+L1199: <span class="vote-pct">91%</span>
+L1201: <div class="vote-item">
+L1202: <span class="vote-label">Multi-agent support</span>
+L1203: <div class="vote-bar-wrap"><div class="vote-bar" style="width:78%"></div></div>
+L1204: <span class="vote-pct">78%</span>
+L1206: <div class="vote-item">
+L1207: <span class="vote-label">Git diff viewer</span>
+L1208: <div class="vote-bar-wrap"><div class="vote-bar" style="width:65%"></div></div>
+L1209: <span class="vote-pct">65%</span>
+L1211: <div class="vote-item">
+L1212: <span class="vote-label">Voice command mode</span>
+L1213: <div class="vote-bar-wrap"><div class="vote-bar" style="width:54%"></div></div>
+L1214: <span class="vote-pct">54%</span>
+L1216: <div class="vote-item">
+L1217: <span class="vote-label">Built-in Ollama manager</span>
+L1218: <div class="vote-bar-wrap"><div class="vote-bar" style="width:48%"></div></div>
+L1219: <span class="vote-pct">48%</span>
+L1249: <div class="compare-item"><span class="cross">✕</span> <span style="color:var(--muted)">Priority community votes</span></div>
+L1265: <div class="compare-item"><span class="check-blue">✓</span> <span>Screenshot + browser console reads</span></div>
+L1267: <div class="compare-item"><span class="check-blue">✓</span> <span>Priority feature votes</span></div>
+L1305: <p class="footer-copy">© 2025 Bunker. Local-first. No subscription.</p>
