@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Your Bunker BYOA license</title>
+<style>
+  :root { --bg:#050505; --panel:#0a0a0a; --fg:#e6e6e6; --dim:#8a8a8a;
+          --olive:#9acd32; --cyan:#00b4ff; --line:#1c1c1c; --err:#ff6b6b; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font-family: ui-monospace, "Share Tech Mono", Menlo, Consolas, monospace;
+         line-height:1.6; }
+  .wrap { max-width:620px; margin:0 auto; padding:56px 22px 80px; }
+  .check { font-size:52px; color:var(--olive); text-align:center; }
+  h1 { font-size:26px; margin:8px 0 6px; text-align:center; }
+  .sub { color:var(--dim); text-align:center; margin:0 0 28px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:24px; }
+  .label { font-size:12px; color:var(--dim); letter-spacing:1px; text-transform:uppercase; margin-bottom:8px; }
+  .key { background:#000; border:1px solid var(--line); border-radius:10px; padding:14px;
+         color:var(--olive); font-size:12px; word-break:break-all; white-space:pre-wrap;
+         max-height:150px; overflow:auto; }
+  button { background:var(--olive); color:#04120a; border:none; border-radius:10px;
+           font:inherit; font-size:15px; font-weight:700; padding:13px 20px; cursor:pointer;
+           width:100%; margin-top:14px; letter-spacing:.5px; }
+  button:hover { filter:brightness(1.08); }
+  button.copied { background:var(--cyan); }
+  ol { padding-left:20px; margin:22px 0 0; }
+  ol li { padding:5px 0; }
+  ol b { color:var(--cyan); }
+  .state { text-align:center; color:var(--dim); padding:20px 0; }
+  .spinner { display:inline-block; width:16px; height:16px; border:2px solid var(--line);
+             border-top-color:var(--olive); border-radius:50%; animation:spin .8s linear infinite;
+             vertical-align:middle; margin-right:8px; }
+  @keyframes spin { to { transform:rotate(360deg); } }
+  .err { color:var(--err); }
+  .fine { color:var(--dim); font-size:13px; margin-top:22px; text-align:center; }
+  a { color:var(--cyan); }
+  .hidden { display:none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="check">✓</div>
+  <h1>Payment complete</h1>
+  <p class="sub">Your Bunker BYOA license is ready.</p>
+
+  <div class="card">
+    <div id="state" class="state"><span class="spinner"></span>Issuing your license…</div>
+
+    <div id="ready" class="hidden">
+      <div class="label">Your license key</div>
+      <div id="key" class="key"></div>
+      <button id="copy" type="button">Copy license key</button>
+
+      <ol>
+        <li>Open <b>Bunker</b>. Click the gear (⚙) in the Forge panel → <b>Settings</b>.</li>
+        <li>Click <b>“Activate license…”</b>.</li>
+        <li>Paste the key and press Enter — you’ll see <b>“✅ BYOA Unlocked”</b>.</li>
+      </ol>
+    </div>
+  </div>
+
+  <p class="fine">
+    We also emailed this key to you as a backup. Bookmark this page or keep the email —
+    it’s your proof of purchase.
+  </p>
+</div>
+
+<script>
+  // Your deployed get-license function (bunker project).
+  const LICENSE_ENDPOINT =
+    "https://yghvtgkvgxvlvgcywcuw.functions.supabase.co/get-license";
+
+  const stateEl = document.getElementById("state");
+  const readyEl = document.getElementById("ready");
+  const keyEl = document.getElementById("key");
+  const copyBtn = document.getElementById("copy");
+
+  const sessionId = new URLSearchParams(location.search).get("session_id");
+
+  function fail(msg) {
+    stateEl.classList.remove("hidden");
+    stateEl.classList.add("err");
+    stateEl.innerHTML =
+      msg +
+      '<br><br>Your key was still emailed to you. Need help? Contact support with your payment email.';
+  }
+
+  function showKey(token) {
+    stateEl.classList.add("hidden");
+    readyEl.classList.remove("hidden");
+    keyEl.textContent = token;
+  }
+
+  copyBtn.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(keyEl.textContent);
+      copyBtn.textContent = "✓ Copied!";
+      copyBtn.classList.add("copied");
+      setTimeout(() => {
+        copyBtn.textContent = "Copy license key";
+        copyBtn.classList.remove("copied");
+      }, 2000);
+    } catch {
+      // Fallback: select the text so the buyer can copy manually.
+      const r = document.createRange();
+      r.selectNodeContents(keyEl);
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(r);
+    }
+  });
+
+  // The webhook mints the license moments after payment, so poll a few times
+  // before giving up (fulfilment is async and usually lands in 1–3s).
+  const MAX_TRIES = 12; // ~24s at 2s intervals
+  let tries = 0;
+
+  async function poll() {
+    if (!sessionId) {
+      fail("We couldn't read your session id from the link.");
+      return;
+    }
+    tries++;
+    try {
+      const res = await fetch(
+        LICENSE_ENDPOINT + "?session_id=" + encodeURIComponent(sessionId),
+      );
+      if (res.status === 200) {
+        const data = await res.json();
+        if (data.token) { showKey(data.token); return; }
+      }
+      // 202 pending (webhook not done) or 402 unpaid-yet → keep trying.
+      if ((res.status === 202 || res.status === 402) && tries < MAX_TRIES) {
+        setTimeout(poll, 2000);
+        return;
+      }
+      if (res.status === 404) {
+        fail("We couldn't verify this checkout session.");
+        return;
+      }
+      if (res.status === 410) {
+        fail(
+          "For your security, the license key is only shown here for 24 hours " +
+            "after purchase.",
+        );
+        return;
+      }
+      if (tries < MAX_TRIES) { setTimeout(poll, 2000); return; }
+      fail("Your license is taking longer than usual to issue.");
+    } catch {
+      if (tries < MAX_TRIES) { setTimeout(poll, 2000); return; }
+      fail("Network error while fetching your license.");
+    }
+  }
+
+  poll();
+</script>
+</body>
+</html>
